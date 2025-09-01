@@ -19,6 +19,9 @@ public class OrderRegisterDTO {
     @NotBlank(message = "Product name is required")
     private String productName;
 
+    @NotBlank(message = "Product type is required")
+    private String productType;
+
     @NotNull(message = "Product amount is required")
     private Double amount;
 

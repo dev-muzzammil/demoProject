@@ -3,6 +3,7 @@ package com.example.sample.Entity;
 import com.example.sample.Common.OrderStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -21,6 +22,9 @@ public class Orders {
 
     @Column(name = "product_name" , nullable = false)
     private String productName;
+
+    @Column(name = "product_type" , nullable = false)
+    private String productType;
 
     @Column(name = "amount" , nullable = false)
     private Double amount;
