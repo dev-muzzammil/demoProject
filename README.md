@@ -1,49 +1,51 @@
-Spring Boot Advanced Backend Project
-This project integrates enterprise-grade practices commonly used in real-world Spring Boot applications.
+# Spring Boot Advanced Backend Project
 
-🔹 Features Implemented:
+This project integrates **enterprise-grade practices** commonly used in real-world Spring Boot applications.  
+It demonstrates robust backend design with database migrations, API documentation, AOP, validation, mapping, and exception handling.
 
-Liquibase Integration
+---
 
-dbmasterlog.yaml for database changelog management
+## 🔹 Features Implemented
 
-Separate YAML files for entity-based table creation
+### 1. Liquibase Integration
+- `dbmasterlog.yaml` for database changelog management  
+- Separate YAML files for entity-based table creation  
+- Version-controlled database schema changes  
 
-Version-controlled database schema changes
+### 2. Swagger
+- API documentation for all REST endpoints  
+- Interactive UI for testing APIs  
 
-Swagger
+### 3. AOP (Aspect-Oriented Programming)
+- **Logging Aspect**: centralized request/response logging  
+- **Security Aspect**: method-level security checks  
 
-API documentation for all REST endpoints
+### 4. Validation
+- Field-level and class-level validation annotations  
 
-Interactive UI for testing APIs
+### 5. Mapper
+- DTO ↔ Entity conversion using mapper approach  
 
-AOP (Aspect-Oriented Programming)
+### 6. Global Exception Handling
+- Centralized error responses using `@ControllerAdvice`  
 
-Logging Aspect: centralized request/response logging
+---
 
-Security Aspect: method-level security checks
+## 🔹 Learning Outcome
+This project demonstrates how to build a **robust, scalable backend system** with:  
+- Controlled **database migrations** (Liquibase)  
+- **Clean API documentation** (Swagger)  
+- **Cross-cutting concerns** handled via AOP (logging, security)  
+- Proper **validation & error handling**  
+- Maintainable **DTO–Entity mapping**  
 
-Validation
+---
 
-Field-level and class-level validation annotations
+## 🚀 Tech Stack
+- **Spring Boot**  
+- **Liquibase**  
+- **Swagger (OpenAPI)**  
+- **Spring AOP**  
+- **Hibernate Validator**  
 
-Mapper
-
-DTO ↔ Entity conversion using mapper approach
-
-Global Exception Handling
-
-Centralized error responses using @ControllerAdvice
-
-🔹 Learning Outcome:
-This project demonstrates how to build a robust, scalable backend system with:
-
-Controlled database migrations (Liquibase)
-
-Clean API documentation (Swagger)
-
-Cross-cutting concerns handled via AOP (logging, security)
-
-Proper validation & error handling
-
-Maintainable DTO–Entity mapping
+---
