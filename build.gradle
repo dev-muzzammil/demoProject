@@ -34,6 +34,7 @@ dependencies {
     implementation 'org.liquibase:liquibase-core'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+    implementation 'me.paulschwarz:spring-dotenv:3.0.0'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
@@ -52,13 +53,7 @@ tasks.named('test') {
 
 liquibase {
     activities {
-        main {
-            changeLogFile 'src/main/resources/db/changelog/db.changelog-master.yaml'
-            url 'jdbc:postgresql://localhost:5432/sample'
-            username 'postgres'
-            password '1234'
-            driver 'org.postgresql.Driver'
-        }
+        main {}
     }
     runList = 'main'
 }
