@@ -1,4 +1,4 @@
-=======
+
 # 🚀 User Details Demo Project
 
 This is a **Spring Boot demo project** showcasing enterprise-level best practices.  
